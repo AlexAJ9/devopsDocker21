@@ -1,0 +1,17 @@
+↪ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+alex at x in ~/P/devops21
+↪ docker images
+REPOSITORY                     TAG       IMAGE ID       CREATED         SIZE
+redacted                       latest    259216936d45   11 hours ago    1.19GB
+redacted                       latest    22c6896ad375   11 hours ago    955MB
+redacted                       latest    d7946b7cbc12   11 hours ago    1.76GB
+redacted                       latest    436bdfaf9b50   11 hours ago    976MB
+redacted                       latest    a193d6afe38c   11 hours ago    952MB
+redacted                       latest    8b9b03866278   11 hours ago    955MB
+redacted                       latest    394200e16203   12 hours ago    968MB
+node                           latest    c4fbd6393264   8 days ago      904MB
+redis                          latest    7faaec683238   9 days ago      113MB
+nginx                          latest    87a94228f133   9 days ago      133MB
+google/cloud-sdk               320.0.0   914c359afe47   10 months ago   2.45GB
+alex at x in ~/P/devops21
