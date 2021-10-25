@@ -1,0 +1,21 @@
+version: '3.8'
+
+services: 
+    backend:
+        image: ping_backend
+        build:
+            context: .
+            dockerfile: backend.Dockerfile
+        ports: 
+            - 8080:8080
+        volumes: 
+            - ./example-backend:/usr/src/app/example_backend
+    frontend:
+        image: ping_frontend
+        build:
+            context: .
+            dockerfile: frontend.Dockerfile
+        ports:
+            - 5000:5000
+        volumes: 
+            - ./example-frontend:/usr/src/app/frontend            
