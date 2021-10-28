@@ -3,3 +3,6 @@ example-backend
 example-frontend
 redis_data
 scaling-exercise
+ml-kurkkumopo-training
+ml-kurkkumopo-frontend
+ml-kurkkumopo-backend
