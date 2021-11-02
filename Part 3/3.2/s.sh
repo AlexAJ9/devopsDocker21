@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 
-PROJECT=$1
-TAG=$2
-USERNAME=$3
-REPOSITORY=$4
+echo "Enter project repository!"
+read  PROJECT
+
+
 
 
 echo "Starting. Please wait.. :)."
@@ -12,7 +12,11 @@ git clone $PROJECT project
 cd project
 
 echo "Logging into Dockerhub!"
-docker login 
+docker login
+echo "Enter docker username,repository and image tag."
+read -p "Username: " USERNAME
+read -p "Repository: " REPOSITORY
+read -p "Tag: " TAG
 echo "Building image with tag ${USERNAME}/${REPOSITORY}:${TAG}!"
 docker build . -t ${USERNAME}/${REPOSITORY}:$TAG
 echo "Pushing to dockerhub!"
